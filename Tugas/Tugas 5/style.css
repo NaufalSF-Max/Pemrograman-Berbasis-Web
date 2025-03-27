@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  'Plus Jakarta Sans';
+}
+
+.heading {
+    background-color: #20a7f5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.mid {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.input {
+    padding: 10px;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#nim,#nilai {
+    padding: 1px;
+}
