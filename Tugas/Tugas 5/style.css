@@ -4,15 +4,19 @@
     font-family:  'Plus Jakarta Sans';
 }
 
+body {
+    background-color: #0A3981;
+}
+
 .heading {
-    background-color: #20a7f5;
+    background-color: #E38E49;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
 .mid {
-    padding: 20px;
+    padding: 100px 20px 20px 20px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -20,12 +24,27 @@
 
 .input {
     padding: 10px;
-    background-color: blanchedalmond;
+    background-color: #D4EBF8;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 100vh;
 }
 
 #nim,#nilai {
     padding: 1px;
+    display:inline-block;
+    width: 100%;
+}
+
+#cek-nilai {
+    padding: 10px;
+    background-color: #E38E49;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+}
+
+#cek-nilai:hover {
+    background-color: #FFA07A;
 }

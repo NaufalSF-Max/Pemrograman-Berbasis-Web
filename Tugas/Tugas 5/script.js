@@ -1,6 +1,14 @@
 function cekNilai () {
     var nim = document.getElementById("nim").value;
     var nilai = document.getElementById("nilai").value;
+
+    if (!nim || !nilai) {
+        alert("Harap masukkan NIM dan Nilai!");
+        return;
+    }
+
+    nilai = parseFloat(nilai);
+
     if (nilai >= 80 && nilai <= 100) {
         alert("Selamat, dengan nilai : " + nilai + " anda mendapatkan huruf mutu A dan di dinyatakan lulus");
     } else if (nilai >= 70 && nilai < 80) {
@@ -12,6 +20,6 @@ function cekNilai () {
     } else if (nilai >= 0 && nilai < 50) {
         alert("Maaf, dengan nilai : " + nilai + " anda mendapatkan huruf mutu E dan di dinyatakan tidak lulus");
     } else {
-        alert("Nilai yang anda masukkan tidak valid");
+        alert("Nilai tidak valid");
     }
 }
