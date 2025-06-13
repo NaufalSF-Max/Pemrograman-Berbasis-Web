@@ -20,6 +20,9 @@
                        <a class="nav-link" href="lihat_transaksi.php">Lihat Pesanan</a>
                    </li>
                    <li class="nav-item">
+                       <a class="nav-link" href="daftar_pelanggan.php">Daftar Pelanggan</a>
+                   </li>
+                   <li class="nav-item">
                        <a class="nav-link" href="pelanggan.php">Tambah Pelanggan</a>
                    </li>
                </ul>
