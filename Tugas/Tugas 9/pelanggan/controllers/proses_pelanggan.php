@@ -1,5 +1,5 @@
 <?php
-include 'koneksi_db.php';
+include '../../koneksi_db.php';
 
 $search_nama = isset($_GET['nama']) ? $_GET['nama'] : '';
 $search_email = isset($_GET['email']) ? $_GET['email'] : '';

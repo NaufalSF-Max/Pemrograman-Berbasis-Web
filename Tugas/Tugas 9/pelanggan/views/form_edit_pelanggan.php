@@ -1,8 +1,8 @@
 <?php
-include 'koneksi_db.php';
+include '../../koneksi_db.php';
 
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
-    echo "<script>alert('ID tidak valid'); window.location='daftar_pelanggan.php';</script>";
+    echo "<script>alert('ID tidak valid'); window.location='./daftar_pelanggan.php';</script>";
     exit;
 }
 
@@ -14,12 +14,12 @@ $result = $stmt->get_result();
 $pelanggan = $result->fetch_assoc();
 
 if (!$pelanggan) {
-    echo "<script>alert('Pelanggan tidak ditemukan'); window.location='daftar_pelanggan.php';</script>";
+    echo "<script>alert('Pelanggan tidak ditemukan'); window.location='./daftar_pelanggan.php';</script>";
     exit;
 }
 ?>
 
-<?php include 'nav.php'; ?>
+<?php include '../../nav.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +31,7 @@ if (!$pelanggan) {
 <body>
    <div class="container mt-4">
        <h2>Edit Data Pelanggan</h2>
-       <form method="post" action="proses_edit_pelanggan.php">
+       <form method="post" action="../controllers/proses_edit_pelanggan.php">
            <input type="hidden" name="id" value="<?php echo $pelanggan['ID']; ?>">
            <div class="mb-3">
                <label for="nama" class="form-label">Nama</label>

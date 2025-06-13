@@ -8,22 +8,22 @@
            <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav ms-auto">
                    <li class="nav-item">
-                       <a class="nav-link" href="index.php">Daftar Buku</a>
+                       <a class="nav-link" href="../../buku/views/index.php">Daftar Buku</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="tambah_buku.php">Tambah Buku</a>
+                       <a class="nav-link" href="../../buku/views/tambah_buku.php">Tambah Buku</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="transaksi.php">Buat Pesanan</a>
+                       <a class="nav-link" href="../../transaksi/views/transaksi.php">Buat Pesanan</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="lihat_transaksi.php">Lihat Pesanan</a>
+                       <a class="nav-link" href="../../transaksi/views/lihat_transaksi.php">Lihat Pesanan</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="daftar_pelanggan.php">Daftar Pelanggan</a>
+                       <a class="nav-link" href="../../pelanggan/views/daftar_pelanggan.php">Daftar Pelanggan</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="pelanggan.php">Tambah Pelanggan</a>
+                       <a class="nav-link" href="../../pelanggan/views/pelanggan.php">Tambah Pelanggan</a>
                    </li>
                </ul>
            </div>

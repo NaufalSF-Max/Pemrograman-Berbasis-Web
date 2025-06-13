@@ -1,5 +1,5 @@
 <?php
-   include 'koneksi_db.php'; // Koneksi database
+   include '../../koneksi_db.php'; // Koneksi database
 
 
    // Inisialisasi variabel pencarian

@@ -1,4 +1,4 @@
-<?php include 'nav.php'; ?>
+<?php include '../../nav.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +10,7 @@
 <body>
    <div class="container mt-4">
        <h2>Tambah Buku Baru</h2>
-       <form method="post" action="proses_tambah_buku.php">
+       <form method="post" action="../controllers/proses_tambah_buku.php">
            <div class="mb-3">
                <label for="judul" class="form-label">Judul</label>
                <input type="text" class="form-control" id="judul" name="judul" required>

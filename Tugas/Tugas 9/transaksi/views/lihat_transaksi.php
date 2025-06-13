@@ -1,5 +1,5 @@
 <?php
-include 'koneksi_db.php'; // Koneksi database
+include '../../koneksi_db.php'; // Koneksi database
 
 
 // Query untuk menampilkan data pesanan beserta nama pelanggan dan total harga
@@ -21,7 +21,7 @@ $result = $conn->query($query);
    <title>Daftar Pesanan</title>
 </head>
 <body>
-   <?php include 'nav.php' ?>
+   <?php include '../../nav.php' ?>
    <div class="container mt-4">
        <h2>Daftar Pesanan</h2>
 

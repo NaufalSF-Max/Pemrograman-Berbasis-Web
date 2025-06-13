@@ -1,5 +1,5 @@
 <?php
-include 'koneksi_db.php';
+include '../../koneksi_db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    $nama = $_POST['nama'];
@@ -13,12 +13,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    if ($stmt->execute()) {
        echo "<script>
            alert('Pelanggan berhasil ditambahkan!');
-           window.location.href = 'pelanggan.php';
+           window.location.href = '../views/pelanggan.php';
        </script>";
    } else {
        echo "<script>
            alert('Gagal menambahkan pelanggan: " . addslashes($stmt->error) . "');
-           window.location.href = 'pelanggan.php';
+           window.location.href = '../views/pelanggan.php';
        </script>";
    }
 

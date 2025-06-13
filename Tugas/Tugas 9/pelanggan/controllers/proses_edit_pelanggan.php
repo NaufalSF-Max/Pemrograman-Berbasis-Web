@@ -1,5 +1,5 @@
 <?php
-include 'koneksi_db.php';
+include '../../koneksi_db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = $_POST['id'];
@@ -12,9 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("ssssi", $nama, $alamat, $email, $telepon, $id);
 
     if ($stmt->execute()) {
-        echo "<script>alert('Data pelanggan berhasil diperbarui'); window.location='daftar_pelanggan.php';</script>";
+        echo "<script>alert('Data pelanggan berhasil diperbarui'); window.location='../views/daftar_pelanggan.php';</script>";
     } else {
-        echo "<script>alert('Gagal memperbarui data: " . addslashes($stmt->error) . "'); window.location='daftar_pelanggan.php';</script>";
+        echo "<script>alert('Gagal memperbarui data: " . addslashes($stmt->error) . "'); window.location='../views/daftar_pelanggan.php';</script>";
     }
 
     $stmt->close();

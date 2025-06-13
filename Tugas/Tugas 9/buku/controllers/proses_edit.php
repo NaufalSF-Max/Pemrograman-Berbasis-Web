@@ -1,5 +1,5 @@
 <?php
-include 'koneksi_db.php';
+include '../../koneksi_db.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -16,9 +16,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
    if ($stmt->execute()) {
-       echo "<script>alert('Data berhasil diperbarui'); window.location='index.php';</script>";
+       echo "<script>alert('Data berhasil diperbarui'); window.location='../views/index.php';</script>";
    } else {
-       echo "<script>alert('Gagal memperbarui data'); window.location='index.php';</script>";
+       echo "<script>alert('Gagal memperbarui data'); window.location='../views/index.php';</script>";
    }
 }
 ?>

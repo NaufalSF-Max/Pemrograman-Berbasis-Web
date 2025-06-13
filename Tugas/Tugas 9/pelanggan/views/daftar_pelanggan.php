@@ -1,4 +1,4 @@
-<?php include 'proses_pelanggan.php'; ?>
+<?php include '../controllers/proses_pelanggan.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +8,7 @@
    <title>Daftar Pelanggan</title>
 </head>
 <body>
-   <?php include 'nav.php'; ?>
+   <?php include '../../nav.php'; ?>
    <div class="container mt-4">
        <h2>Daftar Pelanggan</h2>
 
@@ -47,8 +47,8 @@
                    <td><?php echo htmlspecialchars($row['Email']); ?></td>
                    <td><?php echo htmlspecialchars($row['Telepon']); ?></td>
                    <td>
-                       <a href="form_edit_pelanggan.php?id=<?php echo $row['ID']; ?>" class="btn btn-sm btn-warning">Edit</a>
-                       <a href="proses_hapus_pelanggan.php?id=<?php echo $row['ID']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
+                       <a href="./form_edit_pelanggan.php?id=<?php echo $row['ID']; ?>" class="btn btn-sm btn-warning">Edit</a>
+                       <a href="../controllers/proses_hapus_pelanggan.php?id=<?php echo $row['ID']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
                    </td>
                </tr>
                <?php endwhile; ?>

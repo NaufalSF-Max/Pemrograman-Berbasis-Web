@@ -1,6 +1,6 @@
 <?php
-include 'koneksi_db.php';
-include 'nav.php';
+include '../../koneksi_db.php';
+include '../../nav.php';
 
 $id = $_GET['id'] ?? 0;
 
@@ -22,7 +22,7 @@ $row = $result->fetch_assoc();
 <body>
    <div class="container mt-4">
        <h2>Edit Data Buku</h2>
-       <form method="post" action="proses_edit.php">
+       <form method="post" action="../controllers/proses_edit.php">
            <input type="hidden" name="id" value="<?= $row['ID'] ?>">
 
 
@@ -44,7 +44,7 @@ $row = $result->fetch_assoc();
            </div>
            <div class="mb-3">
                <label for="stok" class="form-label">Stok</label>
-               <input type="number" class="form-control" id="stok" name="stok" value="<?= $row['stok'] ?>" required>
+               <input type="number" class="form-control" id="stok" name="stok" value="<?= $row['Stok'] ?>" required>
            </div>
            <button type="submit" class="btn btn-success">Simpan Perubahan</button>
        </form>

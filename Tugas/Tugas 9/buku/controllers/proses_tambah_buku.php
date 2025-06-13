@@ -1,5 +1,5 @@
 <?php
-include 'koneksi_db.php';
+include '../../koneksi_db.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -17,12 +17,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    if ($stmt->execute()) {
        echo "<script>
            alert('Buku berhasil ditambahkan!');
-           window.location.href = 'tambah_buku.php';
+           window.location.href = '../views/tambah_buku.php';
        </script>";
    } else {
        echo "<script>
            alert('Gagal menambahkan buku: " . addslashes($stmt->error) . "');
-           window.location.href = 'tambah_buku.php';
+           window.location.href = '../views/tambah_buku.php';
        </script>";
    }
 }

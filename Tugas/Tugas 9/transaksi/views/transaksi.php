@@ -1,6 +1,6 @@
 <?php
-include 'koneksi_db.php';
-include 'nav.php';
+include '../../koneksi_db.php';
+include '../../nav.php';
 
 
 // Ambil daftar buku dan pelanggan
@@ -25,7 +25,7 @@ $pelanggan_result = $conn->query("SELECT ID, Nama FROM Pelanggan");
    <?php endif; ?>
 
 
-   <form method="post" action="proses_transaksi.php">
+   <form method="post" action="../controllers/proses_transaksi.php">
        <div class="mb-3">
            <label for="pelanggan_id" class="form-label">Pilih Pelanggan</label>
            <select class="form-select" name="pelanggan_id" id="pelanggan_id" required>
