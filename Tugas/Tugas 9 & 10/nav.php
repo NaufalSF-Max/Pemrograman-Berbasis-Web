@@ -25,6 +25,9 @@
                    <li class="nav-item">
                        <a class="nav-link" href="../../pelanggan/views/pelanggan.php">Tambah Pelanggan</a>
                    </li>
+                   <li class="nav-item">
+                       <a class="nav-link text-danger" href="../../login/controllers/proses_logout.php">Logout</a>
+                   </li>
                </ul>
            </div>
        </div>
